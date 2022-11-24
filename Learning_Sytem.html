@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+<style>
+
+.nav{
+justify-content: space-between;
+align-items: center;
+display: flex;
+position: fixed;
+overflow: hidden;
+background-color: rgb(46, 40, 38);
+border-radius: 50pc;
+left: 50%;
+transform: translateX(-50%);
+width:76%;
+margin-top: 0px;
+box-shadow: 0px 3px 8px rgba(255, 30, 30, 0.79);
+z-index: 1;
+
+}
+
+a{text-decoration: none;
+text-align:center;
+padding: 2px 5px;
+display: block;
+color: white;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+font-size:15px;
+}
+
+
+
+a.a1::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(247, 2, 2);
+    transition: width .3s;
+    margin-bottom: 0;
+}
+
+a.a1:hover::after {
+    width: 100%;
+    transition: width .3s;
+    
+   
+}
+
+
+ 
+a.a2::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(137, 247, 2);
+    transition: width .3s;
+    margin-bottom: 0;
+}
+
+a.a2:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+a.a3::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(71, 234, 237);
+    transition: width .3s;
+    margin-bottom: 0;
+}
+
+a.a3:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+a.a4::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(247, 165, 2);
+    transition: width .3s;
+    margin-bottom: 0;
+}
+
+a.a4:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+a.a5::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(227, 2, 247);
+    transition: width .3s;
+    margin-bottom: 0;
+}
+
+a.a5:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+a.a6::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: rgb(2, 247, 125);
+    transition: width .3s;
+    margin-bottom: 0;
+}
+
+a.a6:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+
+
+
+
+
+
+.gradient{
+
+
+background-position: center;
+background:linear-gradient(rgba(41, 63, 250,.8),rgba(198, 59, 250,.8)),url(https://images.pexels.com/photos/8199562/pexels-photo-8199562.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1) no-repeat center;
+background-repeat: no-repeat;
+height:700px;
+background-size: cover;
+width: 100%;
+
+}
+ul{float: right;
+  list-style-type: none;
+display: flex;
+
+}
+ul li{padding:0 9px;
+}
+
+
+.text{
+text-align: center;
+font-weight: bolder;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+color: antiquewhite;
+margin-top: 120px;
+font-size: 40px;
+text-shadow: 2px 2px 4px #000000;
+}
+
+
+.para1{
+
+text-align: center;
+color: rgb(255, 255, 255);
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 22px;
+
+}
+
+.button1{
+font-size: 20px;
+text-align: center;
+margin-top: 15px;
+border-radius:50px;
+height:100%;
+width:12%;
+padding:8px;
+background-color: rgb(234, 99, 10);
+color: #fff;
+border: none;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+transition: .2s;
+box-shadow: 0px 3px 15px #000000;
+
+
+}
+.button1:hover{
+
+letter-spacing: 1.5px;
+}
+
+
+.box{
+justify-content: center;
+display: flex;
+text-align: center;
+margin-top: 50px;
+
+}
+
+.box1{
+background-color: #fff;
+border-radius: 30px;
+text-align: center;
+width: 280px;
+height:280px;
+justify-content: space-between;
+column-gap: 30px;
+margin:20px;
+padding: 0 6px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+cursor: pointer;
+box-shadow: 0 2px 10px #000000;
+transition: 0.3s;
+
+
+
+}
+
+.box i{
+width: 26px;
+height: 26px;
+line-height: 26px;
+font-size:20px;
+padding: 10% 10%;
+color:#fff;
+border-radius:50%;
+background-color:rgba(27, 27, 51, 0.87);
+margin:22px 0;
+transition:.3s;
+}
+.box h3{
+font-size:22px;
+margin-top: 12px;
+text-align: center;
+color:rgb(255, 106, 0);
+transition: .3s;
+}
+.box p{
+color:#666;
+text-align: center;
+}
+
+
+.box1:hover h3{
+
+color:rgb(67, 65, 65);
+}
+
+
+.box1:hover i{
+
+background-color:rgb(255, 106, 0);
+}
+.box1:hover{
+scale:0.95;
+}
+
+
+.about{
+line-height: 12px;
+background:linear-gradient(white,rgba(66, 220, 156, 0.3));
+color:aqua;
+margin-top:0;
+padding-top: 0;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+padding-bottom: 50px;
+}
+
+.about h1{
+
+text-align: center;
+font-size: 36px;
+color: rgb(255, 106, 0);
+margin-top: 110px;
+}
+
+.about .para1{
+font-size: 20px;
+color:rgba(128, 123, 123, 0.829);
+font-weight: lighter;
+}
+
+.about h2{
+color: rgb(255, 106, 0);
+padding-left: 30px;
+font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-weight: bolder;
+letter-spacing:0.5px;
+word-spacing: 2px;
+font-size: 30px;
+
+
+}
+.about .para2{
+padding-left: 30px;
+color:rgba(58, 54, 54, 0.933);
+}
+
+.button2{
+font-size:40%;
+text-align: center;
+margin-left: 30px;
+background-color: rgb(56, 59, 59);
+border-radius: 50px;
+border: none;
+height:300%;
+width:8%;
+
+}
+
+
+
+
+.bg{
+  background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #626262, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #929292, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+padding:50px;
+
+padding-bottom: 120px;
+
+
+}
+
+
+.teacher{
+margin-top: 80px;
+display: flex;
+justify-content:space-between;
+text-align: center;
+
+}
+
+.teacher1{
+padding: 0px 0px;
+height: 280px;
+width: 280px;
+padding-bottom: 160px;
+background:radial-gradient(rgb(211, 211, 211),rgb(46, 46, 46));
+border-radius: 20px;
+box-shadow: 0 -3px 10px rgb(255, 122, 69);
+border-width: 3px;
+border-bottom: 3px solid  rgb(255, 94, 0);
+transition: 0.3s;
+
+
+}
+.teacher img{
+height:110%;
+width:100%;
+align-items: center;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+filter:grayscale();
+
+
+
+
+
+}
+
+.k1{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1px;
+  font-size:large;
+  font-weight: bolder;
+  color:yellow;
+  
+  
+
+
+}
+
+.p2{
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1px;
+  font-size:15px;
+  color: rgb(192, 192, 192);
+}
+.teacher1 i{
+line-height: 55px;
+padding: 0px 10px;
+font-size: 18px;
+color:yellow;
+}
+
+.teacher1:hover{
+scale: 1.09;
+}
+
+
+.teacher1 i:hover{
+  color:rgb(255, 60, 0);
+}
+
+.teacher :hover img{
+filter:grayscale(0);
+filter: contrast(1);
+
+
+}
+
+
+.course{
+padding: 1px;
+background-color:   rgb(91, 91, 148) ;
+padding-bottom: 100px;
+overflow: hidden;
+
+}
+.main{
+
+  display: flex;
+  justify-content:center;
+ 
+  padding-top:50px;
+  text-align: center;
+ 
+  flex-wrap: wrap;
+  
+}
+ .courses1{
+box-shadow: 3.5px 3.5px 3px  rgb(13, 5, 46);
+border-radius: 25px 25px 5px 5px;
+border:3px solid rgb(23, 22, 20);
+background-color:rgb(255, 238, 124);
+width:320px;
+height:250px;
+margin:40px 20px;
+transition: 0.3s;
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+}
+
+
+
+.h1{
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 36px;
+  color:rgb(249, 254, 0);
+  font-weight: bolder;
+  text-shadow: 0 2px 8px#000000;
+  line-height: 50px;
+}
+
+.w2{
+text-align: center;
+font-size: 25px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: rgb(202, 198, 198);
+letter-spacing: 5px;
+word-spacing: 3px;
+
+
+}
+.courses1 h3{
+text-align: center;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: 22px;
+color: rgb(7, 7, 60);
+margin-top: -2px;
+transition: 0.2s;
+
+}
+
+.courses1 p{
+text-align: center;
+font-size: 16px;
+font-family:Arial, Helvetica, sans-serif;
+transition: 0.2s;
+
+
+
+}
+
+
+#logo{
+height:88px;
+width:88px;
+line-height:88px;
+text-align: center;
+border-radius: 50%;
+background-color: rgb(15, 25, 61) ;
+font-size: 40px;
+color: #fff;
+margin-top: -70px;
+border-top:16px solid rgb(91, 91, 148);
+border-bottom:16px solid rgb(255, 238, 124);
+border-left: 16px solid rgb(6, 18, 62);
+border-right: 16px solid rgb(6, 18, 62) ;
+box-shadow: 0 0 0 5px rgb(255, 81, 0)  inset;
+transition: 0.2s;
+
+
+
+
+}
+
+.up{
+  text-align:center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 8px;
+  background-color:rgba(6, 18, 62);
+  border-radius: 2px;
+  margin-top: 40px;
+  padding-top: 0.5px;
+  padding-bottom: 0.5px;
+  height: 0px;
+  transition: 0.2s;
+  opacity: 0;
+color: rgb(255, 255, 255);
+width: 324px;
+border-radius: 50px 50px 2px 2px;
+border-top: 4px solid rgb(255, 81, 0) ;
+
+
+
+}
+
+.courses1:hover div{
+ opacity: 100%;
+height: 50px;
+
+
+}
+
+.courses1:hover i{
+scale:1.05;
+
+}
+
+.courses1:hover h3{
+  scale: 1.1;
+}
+.courses1:hover{
+  transform:translateY(-20px);
+
+  
+}
+
+.copyright{
+text-align: center;
+font-family:Arial, Helvetica, sans-serif;
+padding-top: 1px;
+
+
+}
+
+</style>
+</head>
+<body style="
+margin: 0;
+padding: 0;
+">
+<div class="gradient" id="home"> 
+
+  <div class="nav">
+    
+      
+      <a href="#" class="logo" style=" font-size:30px; font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; padding-left:20px;" ><i class="fas fa-graduation-cap" style="color:rgb(255, 64, 64);"></i> EDUWORD</a></li>
+    <ul>
+      <li><a class="a1" href="#">Contact</a></li>
+      <li><a class="a2" href="#">Review</a></li>
+      <li><a class="a3" href="#course">Courses</a></li>
+      <li><a class="a4" href="#teacher">Teacher</a></li>
+      <li><a class="a5" href="#about">About</a></li>
+      <li><a class="a6" href="#home">Home</a></li>
+    </ul>
+    
+  </div>  
+    <br>
+
+  
+  <div><br>
+
+    <br><h1 class="text">LEARN ONLINE FROM HOME</h1>
+    <p class="para1">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Ipsum Rerum Accusantium Dolore Esse Error Facere <br> Totam Eveniet Dicta Molestiae Ea?</p>
+  
+  
+<a href="#"><button type="button" class="button button1">Discover More</button></a>
+ </div>
+
+<div class="box">
+  <div class="box1">
+    <i class="fas fa-graduation-cap"></i>
+    <h3>Trending Courses</h3>
+    <p>Lorem Ipsum Dolor Sit Amet <br>Consectetur, Adipisicing <br>Elit. Libero,Sit!</p>
+  </div>
+
+  <div class="box1">
+    <i class="fas fa-fire"></i>
+    <h3>Free Trial</h3>
+    <p>Lorem Ipsum Dolor Sit Amet <br>Consectetur, Adipisicing <br>Elit. Libero,Sit!</p>
+  </div>
+
+  <div class="box1">
+    <i class="fas fa-award"></i>
+    <h3>Certifications</h3>
+    <p>Lorem Ipsum Dolor Sit Amet <br>Consectetur, Adipisicing <br>Elit. Libero,Sit!</p>
+  </div>
+
+  <div class="box1">
+    <i class="fa-solid fa-lock-open"></i>
+    <h3>Subscription</h3>
+    <p>Lorem Ipsum Dolor Sit Amet <br>Consectetur, Adipisicing <br>Elit. Libero,Sit!</p>
+  </div>
+</div>
+
+</div>
+
+<div class="about" id="about">
+  <h1>About Us</h1>
+  <p class="para1">Start Your Journey With Us</p><br>
+  <h2>Start Your Journey To A Better Life With Our Practical Courses</h2>
+  <p class="para2">Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Soluta Repellendus Incidunt Dolorum Voluptas Saepe,Animi Perspiciatis Praesentium Ipsa Numquam Et<br><br>  Possimus Dolorem Enim Similique, Quod Dicta Necessitatibus Ducimus Officiis Nemo!</p>
+  <a href="#"><button type="button" class="button button2">Learn More</a></button>
+    
+</div>
+
+
+
+<div class="bg" id="teacher">
+
+<h1 class="h1">Our Teachers</h1>
+<p class="w2">Meet Professional Trainers</p>
+<div class="teacher">
+ <div class="teacher1">
+  <img src=https://media.istockphoto.com/id/174176382/photo/business-woman.jpg?s=612x612&w=0&k=20&c=yEmTNCEf6uLAVK7EdRnVcoIKbTIEZhqsULer8Z_lgIY=>
+  <h5 class="k1">Narendra Singh</h5>
+  <p class="p2">I Love Teaching</p>
+
+    <i class="fa-brands fa-facebook"></i>
+    <i class="fa-brands fa-linkedin"></i>
+    <i class="fa-solid fa-phone"></i>
+    <i class="fa-solid fa-message"></i>
+ </div>
+
+ <div class="teacher1">
+  <img src=https://p.turbosquid.com/ts-thumb/tz/1NjU3c/JaYSwwGg/pic01_22/jpg/1489943252/600x600/fit_q87/68ba439d73934dc1006fb3b6d462ea397805cf31/pic01_22.jpg>
+  <h5 class="k1"> Vipin Kumar</h5>
+  <p class="p2">I Love Teaching</p>
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-solid fa-phone"></i>
+  <i class="fa-solid fa-message"></i>
+ </div>
+
+ <div class="teacher1">
+  <img src=https://p.turbosquid.com/ts-thumb/0i/u9b8D3/24ZWaCaU/nina0/jpg/1367564668/600x600/fit_q87/3f0244ef81f208d6f54fa7f03103632f06d298b8/nina0.jpg>
+  <h5 class="k1">Bhupinder Singh</h5>
+  <p class="p2">I Love Teaching</p>
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-solid fa-phone"></i>
+  <i class="fa-solid fa-message"></i>
+ </div>
+
+ <div class="teacher1">
+  <img src=https://p.turbosquid.com/ts-thumb/st/fVepv4/naQI1WjT/tumbnail_03/jpg/1555609454/300x300/sharp_fit_q85/4b63ff7a77ae529de26b69245bfcdeb17f9c5e04/tumbnail_03.jpg>
+  <h5 class="k1">Mukesh Mahey</h5>
+  <p class="p2">I Love Teaching</p>
+  <i class="fa-brands fa-facebook"></i>
+  <i class="fa-brands fa-linkedin"></i>
+  <i class="fa-solid fa-phone"></i>
+  <i class="fa-solid fa-message"></i>
+ </div>
+  
+</div>
+</div>
+
+
+<div class="course" id="course">
+
+<h1 class="h1">Our Courses</h1>
+<p class="w2">Upgrade Your Skills With Newest Courses</p>
+
+<div class="main">
+  <div class="courses1">
+    <i id="logo" class="fa-brands fa-html5"></i>
+    <h3>HTML 5</h3>
+    <p>Lorem Ipsum Dolor Sit Amet Cons Adipisicing Elit. Soluta Repellendus <br> Incidunt Dolorum  </p>
+    <div class="up"><h1>Enroll Now &nbsp&nbsp<i  class="fa-sharp fa-solid fa-indian-rupee-sign"></i>1200</h1></div>
+  </div>
+
+  <div class="courses1">
+    <i id="logo" class="fa-brands fa-css3-alt"></i>
+    <h3>CSS 3</h3>
+    <p>Lorem Ipsum Dolor Sit Amet Cons Adipisicing Elit. Soluta Repellendus <br> Incidunt Dolorum  </p>
+    <div class="up"><h1>Enroll Now &nbsp&nbsp<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>1200</h1></div>
+  </div>
+
+  <div class="courses1">
+    <i id="logo" class="fa-brands fa-square-js"></i>
+    <h3>Java Script</h3>
+    <p>Lorem Ipsum Dolor Sit Amet Cons Adipisicing Elit. Soluta Repellendus <br> Incidunt Dolorum  </p>
+    <div class="up"><h1>Enroll Now &nbsp&nbsp<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>1200</h1></div>
+  </div>
+ 
+  <div class="courses1">
+    <i id="logo" class="fa-solid fa-code"></i>
+    <h3>Web Development</h3>
+    <p>Lorem Ipsum Dolor Sit Amet Cons Adipisicing Elit. Soluta Repellendus <br> Incidunt Dolorum  </p>
+    <div class="up"><h1>Enroll Now &nbsp&nbsp<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>1200</h1></div>
+  </div>
+
+  <div class="courses1">
+    <i id="logo" class="fa-brands fa-python"></i>
+    <h3>Python</h3>
+    <p>Lorem Ipsum Dolor Sit Amet Cons Adipisicing Elit. Soluta Repellendus <br> Incidunt Dolorum  </p>
+    <div class="up"><h1>Enroll Now &nbsp&nbsp<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>1200</h1></div>
+  </div>
+
+  <div class="courses1">
+    <i id="logo" class="fa-solid fa-paintbrush"></i>
+    <h3>Graphic Designing</h3>
+    <p>Lorem Ipsum Dolor Sit Amet Cons Adipisicing Elit. Soluta Repellendus <br> Incidunt Dolorum  </p>
+    <div class="up"><h1>Enroll Now &nbsp&nbsp<i class="fa-sharp fa-solid fa-indian-rupee-sign"></i>1200</h1></div>
+  </div>
+</div>
+</div>
+
+<div class="copyright">
+  
+  <p>Copyright © 2021</p>
+  <hr>
+</div>
+
+ 
+</body>
+
+</html> 
+
